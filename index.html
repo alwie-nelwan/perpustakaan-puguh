@@ -1,206 +1,262 @@
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-     PERPUSTAKAAN WIBSITE
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   html {
-     scroll-behavior: smooth;
-   }
-   .catalog-item {
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
-   }
-   .catalog-item:hover {
-     transform: translateY(-10px);
-     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-   }
-  </style>
- </head>
- <body class="font-roboto bg-gray-100">
-  <header class="bg-white shadow-md">
-   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-    <div class="text-2xl font-bold text-gray-800">
-     Library
-    </div>
-    <nav class="space-x-4 flex items-center">
-     <a class="text-gray-600 hover:text-gray-800" href="#home">
-      Home
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="#about">
-      About
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="#catalog">
-      Catalog
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="#contact">
-      Contact
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="pembelian.html">
-      Purchase
-     </a>
-     <div class="relative">
-      <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="profileMenuButton">
-       <i class="fas fa-user-circle text-2xl">
-       </i>
-      </button>
-      <div class="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg hidden" id="profileMenu">
-       <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="profil.html">
-        Profile
-       </a>
-       <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="setting.html">
-        Settings
-       </a>
-       <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="login.html">
-        Login
-       </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PERPUSTAKAAN WIBSITE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .catalog-item {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .catalog-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="font-roboto bg-gray-100">
+    <header class="bg-white shadow-md">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-gray-800">Library</div>
+        <nav class="space-x-4 flex items-center">
+          <a class="text-gray-600 hover:text-gray-800" href="#home"> Home </a>
+          <a class="text-gray-600 hover:text-gray-800" href="#about"> About </a>
+          <a class="text-gray-600 hover:text-gray-800" href="#catalog">
+            Catalog
+          </a>
+          <a class="text-gray-600 hover:text-gray-800" href="#contact">
+            Contact
+          </a>
+          <a class="text-gray-600 hover:text-gray-800" href="pembelian.html">
+            Purchase
+          </a>
+          <div class="relative">
+            <button
+              class="text-gray-600 hover:text-gray-800 focus:outline-none"
+              id="profileMenuButton"
+            >
+              <i class="fas fa-user-circle text-2xl"> </i>
+            </button>
+            <div
+              class="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg hidden"
+              id="profileMenu"
+            >
+              <a
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                href="profil.html"
+              >
+                Profile
+              </a>
+              <a
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                href="setting.html"
+              >
+                Settings
+              </a>
+              <a
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                href="login.html"
+              >
+                Login
+              </a>
+            </div>
+          </div>
+        </nav>
       </div>
-     </div>
-    </nav>
-   </div>
-  </header>
-  <section class="container mx-auto px-4 py-16" id="home">
-   <div class="flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2">
-     <h1 class="text-4xl font-bold text-gray-800 mb-4">
-      Selamat Datang di Perpustakaan BBC
-     </h1>
-     <p class="text-gray-600 mb-4">
-      
-Temukan dunia pengetahuan dan petualangan dalam koleksi buku dan sumber daya kami yang luas..
-     </p>
-     <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" href="#">
-      Explore Catalog
-     </a>
-    </div>
-    <div class="md:w-1/2 mt-8 md:mt-0">
-     <img alt="A modern library interior with bookshelves and reading areas" class="rounded shadow-md" height="400" src="PERPUSTAKAAN 2.jpg" width="600"/>
-    </div>
-   </div>
-  </section>
-  <section class="bg-white py-16" id="about">
-   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-gray-800 mb-4">
-     Tentang Perpustakaan
-    </h2>
-    <p class="text-gray-600 mb-4">
-      Perpustakaan ini didedikasikan untuk menyediakan ruang yang ramah bagi pembaca dan pelajar dari segala usia. Kami menawarkan berbagai macam buku, sumber daya digital, dan program komunitas.
-    </p>
-    <img alt="Library staff assisting a visitor at the information desk" class="rounded shadow-md" height="400" src="PERPUSTAKAAN 3.jpeg" width="400"/>
-   </div>
-  </section>
-  <section class="container mx-auto px-4 py-16" id="catalog">
-   <h2 class="text-3xl font-bold text-gray-800 mb-4">
-    Catalog
-   </h2>
-   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
-     <img alt="Book cover of 'The Great Gatsby' by F. Scott Fitzgerald" class="rounded mb-4" height="200" src="BUKU HARRY POTTER.jpeg" width="250"/>
-     <h3 class="text-xl font-bold text-gray-800 mb-2">
-      Harry Potter and The Sorcerer's Stone
-     </h3>
-     <p class="text-gray-600">
-      by J.K Rowling
-     </p>
-    </a>
-    <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
-     <img alt="Book cover of 'To Kill a Mockingbird' by Harper Lee" class="rounded mb-4" height="200" src="BUKU FILOSOFI TERAS.png" width="300"/>
-     <h3 class="text-xl font-bold text-gray-800 mb-2">
-      Filosofi Teras
-     </h3>
-     <p class="text-gray-600">
-      by Henry Manampiring
-     </p>
-    </a>
-    <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
-     <img alt="Book cover of '1984' by George Orwell" class="rounded mb-4" height="300" src="BUKU LASKAR PELANGI.webp" width="300"/>
-     <h3 class="text-xl font-bold text-gray-800 mb-2">
-      Laskar Pelangi
-     </h3>
-     <p class="text-gray-600">
-      by Andrea Hirata
-     </p>
-    </a>
-    <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
-     <img alt="Book cover of 'Pride and Prejudice' by Jane Austen" class="rounded mb-4" height="300" src="BUKU 1984.jpeg" width="300"/>
-     <h3 class="text-xl font-bold text-gray-800 mb-2">
-      1984
-     </h3>
-     <p class="text-gray-600">
-      by Geroge Orwell
-     </p>
-    </a>
-    <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
-     <img alt="Book cover of 'Moby-Dick' by Herman Melville" class="rounded mb-4" height="200" src="BUKU SEBUAH SENI.jpeg" width="300"/>
-     <h3 class="text-xl font-bold text-gray-800 mb-2">
-      Sebuah Seni Untuk Bersikap Bodo Amat
-     </h3>
-     <p class="text-gray-600">
-      by Mark Manson
-     </p>
-    </a>
-    <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
-     <img alt="Book cover of 'War and Peace' by Leo Tolstoy" class="rounded mb-4" height="200" src="BUKU DIBAWAH LINDUNGAN KABBAH.jpeg" width="300"/>
-     <h3 class="text-xl font-bold text-gray-800 mb-2">
-      Di Bawah Lindungan Ka'bah
-     </h3>
-     <p class="text-gray-600">
-      by Hamka
-     </p>
-    </a>
-   </div>
-  </section>
-  <section class="bg-white py-16" id="contact">
-   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-gray-800 mb-4">
-     Hubungi
-    </h2>
-    <p class="text-gray-600 mb-4">
-     
-Ada pertanyaan atau butuh bantuan? Jangan ragu untuk menghubungi kami!
-    </p>
-    <form class="space-y-4">
-     <div>
-      <label class="block text-gray-600" for="name">
-       Nama
-      </label>
-      <input class="w-full px-4 py-2 border rounded" id="name" placeholder="Nama Kamu" type="text"/>
-     </div>
-     <div>
-      <label class="block text-gray-600" for="email">
-       Email
-      </label>
-      <input class="w-full px-4 py-2 border rounded" id="email" placeholder="Email Kamu" type="email"/>
-     </div>
-     <div>
-      <label class="block text-gray-600" for="message">
-       Pesan
-      </label>
-      <textarea class="w-full px-4 py-2 border rounded" id="message" placeholder="Pesan Kamu" rows="4"></textarea>
-     </div>
-     <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" type="submit">
-      Kirim Pesan
-     </button>
-    </form>
-   </div>
-  </section>
-  <footer class="bg-gray-800 text-white py-4">
-   <div class="container mx-auto px-4 text-center">
-    <p>
-     © 2025 Perpustakaan BBC. Seluruh Hak Cipta
-    </p>
-   </div>
-  </footer>
-  <script>
-   document.getElementById('profileMenuButton').addEventListener('click', function() {
-     var profileMenu = document.getElementById('profileMenu');
-     profileMenu.classList.toggle('hidden');
-   });
-  </script>
- </body>
+    </header>
+    <section class="container mx-auto px-4 py-16" id="home">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+          <h1 class="text-4xl font-bold text-gray-800 mb-4">
+            Selamat Datang di Perpustakaan BBC
+          </h1>
+          <p class="text-gray-600 mb-4">
+            Temukan dunia pengetahuan dan petualangan dalam koleksi buku dan
+            sumber daya kami yang luas..
+          </p>
+          <a
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            href="#"
+          >
+            Explore Catalog
+          </a>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <img
+            alt="A modern library interior with bookshelves and reading areas"
+            class="rounded shadow-md"
+            height="400"
+            src="PERPUSTAKAAN 2.jpg"
+            width="600"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16" id="about">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">
+          Tentang Perpustakaan
+        </h2>
+        <p class="text-gray-600 mb-4">
+          Perpustakaan ini didedikasikan untuk menyediakan ruang yang ramah bagi
+          pembaca dan pelajar dari segala usia. Kami menawarkan berbagai macam
+          buku, sumber daya digital, dan program komunitas.
+        </p>
+        <img
+          alt="Library staff assisting a visitor at the information desk"
+          class="rounded shadow-md"
+          height="400"
+          src="PERPUSTAKAAN 3.jpeg.jpg"
+          width="400"
+        />
+      </div>
+    </section>
+    <section class="container mx-auto px-4 py-16" id="catalog">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Catalog</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
+          <img
+            alt="Book cover of 'The Great Gatsby' by F. Scott Fitzgerald"
+            class="rounded mb-4"
+            height="200"
+            src="BUKU HARRY POTTER.jpeg.jpg"
+            width="250"
+          />
+          <h3 class="text-xl font-bold text-gray-800 mb-2">
+            Harry Potter and The Sorcerer's Stone
+          </h3>
+          <p class="text-gray-600">by J.K Rowling</p>
+        </a>
+        <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
+          <img
+            alt="Book cover of 'To Kill a Mockingbird' by Harper Lee"
+            class="rounded mb-4"
+            height="200"
+            src="BUKU FILOSOFI TERAS.png"
+            width="300"
+          />
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Filosofi Teras</h3>
+          <p class="text-gray-600">by Henry Manampiring</p>
+        </a>
+        <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
+          <img
+            alt="Book cover of '1984' by George Orwell"
+            class="rounded mb-4"
+            height="300"
+            src="BUKU LASKAR PELANGI.webp"
+            width="300"
+          />
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Laskar Pelangi</h3>
+          <p class="text-gray-600">by Andrea Hirata</p>
+        </a>
+        <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
+          <img
+            alt="Book cover of 'Pride and Prejudice' by Jane Austen"
+            class="rounded mb-4"
+            height="300"
+            src="BUKU 1984.jpeg.jpg"
+            width="300"
+          />
+          <h3 class="text-xl font-bold text-gray-800 mb-2">1984</h3>
+          <p class="text-gray-600">by Geroge Orwell</p>
+        </a>
+        <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
+          <img
+            alt="Book cover of 'Moby-Dick' by Herman Melville"
+            class="rounded mb-4"
+            height="200"
+            src="BUKU SEBUAH SENI.jpeg.jpg"
+            width="300"
+          />
+          <h3 class="text-xl font-bold text-gray-800 mb-2">
+            Sebuah Seni Untuk Bersikap Bodo Amat
+          </h3>
+          <p class="text-gray-600">by Mark Manson</p>
+        </a>
+        <a class="bg-white p-4 rounded shadow-md catalog-item" href="#">
+          <img
+            alt="Book cover of 'War and Peace' by Leo Tolstoy"
+            class="rounded mb-4"
+            height="200"
+            src="BUKU DIBAWAH LINDUNGAN KABBAH.jpeg.jpg"
+            width="300"
+          />
+          <h3 class="text-xl font-bold text-gray-800 mb-2">
+            Di Bawah Lindungan Ka'bah
+          </h3>
+          <p class="text-gray-600">by Hamka</p>
+        </a>
+      </div>
+    </section>
+    <section class="bg-white py-16" id="contact">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Hubungi</h2>
+        <p class="text-gray-600 mb-4">
+          Ada pertanyaan atau butuh bantuan? Jangan ragu untuk menghubungi kami!
+        </p>
+        <form class="space-y-4">
+          <div>
+            <label class="block text-gray-600" for="name"> Nama </label>
+            <input
+              class="w-full px-4 py-2 border rounded"
+              id="name"
+              placeholder="Nama Kamu"
+              type="text"
+            />
+          </div>
+          <div>
+            <label class="block text-gray-600" for="email"> Email </label>
+            <input
+              class="w-full px-4 py-2 border rounded"
+              id="email"
+              placeholder="Email Kamu"
+              type="email"
+            />
+          </div>
+          <div>
+            <label class="block text-gray-600" for="message"> Pesan </label>
+            <textarea
+              class="w-full px-4 py-2 border rounded"
+              id="message"
+              placeholder="Pesan Kamu"
+              rows="4"
+            ></textarea>
+          </div>
+          <button
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            type="submit"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto px-4 text-center">
+        <p>© 2025 Perpustakaan BBC. Seluruh Hak Cipta</p>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("profileMenuButton")
+        .addEventListener("click", function () {
+          var profileMenu = document.getElementById("profileMenu");
+          profileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
 </html>
+
